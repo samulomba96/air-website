@@ -1,0 +1,1 @@
+- per qualsiasi dubbio vedi il file pdf o il video Tredicesima lezione - Prima parte nella sezione Javascript

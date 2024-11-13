@@ -1,0 +1,529 @@
+*{
+    color: #1f1f1f;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing:border-box;
+}
+
+header { /*header che tiene i 3 container*/
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 150px;
+}
+
+/*CONTAINER 1*/
+
+.container1 { /* contenitore 1 che sta nell header*/
+    background-color: #f5f5f5; 
+    width: 100%;
+    height: 35px;
+} 
+
+.secondo-div-container1 { /* div delle icone di sinistra*/
+    float: left; 
+    height: 100%;
+    width: 50%;
+    list-style-type: none;
+    background-color: #f5f5f5;
+}
+
+#iconajordan {
+    height: 18px;
+    width: 18px;
+    margin-left: 50px;
+    float: left; 
+    padding-top: 8px;
+    padding-left: 2px;
+    cursor: pointer;
+}
+
+#iconaconverse {
+    height: 30px;
+    width: 30px;
+    margin-left: 25px;
+    float: left; 
+    padding-top: 3px;
+    cursor: pointer;
+}
+
+/*MENU*/
+
+.lineaverticale{ 
+    border-right: 1px solid;
+    width: 2px;
+    height: 12px;
+    margin: 12px;
+}
+
+#testo-menu-container1{ 
+    height: 100%;
+    max-width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    white-space: nowrap; /*il testo non va a capo*/
+    cursor: pointer;
+}
+
+.nav-del-menu-alto-dx{ 
+    width: 50%;  
+    height: 35px;   
+    background-color: #f5f5f5;   
+    list-style-type: none;
+    float: left;
+} 
+
+.nav-del-menu-alto-dx ul{ 
+    height: 100%;
+    display: flex;
+    float: right;
+    list-style-type: none;
+    padding-right: 70px;
+    margin: 0;
+    font-size: 13px;
+}
+
+.nav-del-menu-alto-dx ul li p:hover{ 
+    color: rgb(115, 115, 115);
+}
+
+.nav-del-menu-alto-dx ul li ul { 
+    background-color: #ffffff;
+    position: absolute;
+    display: none;
+    padding: 0 10px 0 10px;
+    height: auto;
+    border-radius: 0 0 4% 4%;
+}
+
+.nav-del-menu-alto-dx ul li:hover ul { /*scende il menu di aiuto */
+    display: block;
+    z-index: 99999;
+}
+
+.nav-del-menu-alto-dx ul li ul li{
+    width: 100%;
+} 
+
+.nav-del-menu-alto-dx ul li ul li:first-child{
+    font-weight: bold;
+} 
+
+.nav-del-menu-alto-dx ul li ul li p{
+    font-size: 13px;
+}  
+
+/*FINE MENU*/
+
+/*CONTAINER 2*/
+
+.container2 {
+    background-color: #ffffff;
+    height: 60px;
+    width: 100%;
+}
+
+#logonike-principale{
+    height: 30px;
+    width: 65px;
+    float: left;
+    padding-top: 13px;
+    padding-left: 50px;
+    cursor: pointer;
+} 
+
+.container-logo-nike{ /*qui c'è il logo nike nel secondo container*/
+    background-color: #ffffff;
+    height: 100%;
+    float: left;
+    width:20%;
+} 
+
+.nav-menu-container-2{ /*qui ce il menu centrale del secondo container*/
+    background-color: #ffffff;
+    height: 100%;
+    float: left;
+    width:60%;
+}
+
+.div-menu-searchbar-2{
+    background-color: #ffffff;
+    height: 100%;
+    float: right;
+    width:20%;
+} 
+
+/* INIZIO MENU*/
+
+.ul-menu-2{ /*contenitore dentro al nav*/
+    height: 100%;
+    width: 80%;
+    display: flex;
+    float: right;
+    background-color: #ffffff;
+    margin: 0 10% 0 10%;
+    list-style-type: none;
+} 
+
+#menu-orizzontale-2 {
+    min-width: 155px;
+    margin-left: 20%; 
+    cursor: pointer;
+}  
+
+.ul-menu-2 li{
+    padding: 0 5px 0 5px; 
+    font-size: 16px;
+    margin-top: 5px;
+    font-weight: bold;
+} 
+
+.asd:hover{ /*sottolineatura menu 2*/ 
+    text-decoration: underline;
+    text-decoration-thickness: 2px; /*spessore*/
+    text-underline-offset: 8px; /*più in basso */
+    cursor: pointer;
+} 
+
+.ul-menu-2 li{
+    position: relative;
+}
+
+.ul-menu-2 li div{
+    display: none; 
+    background-color: #ffffff;
+    height: 400px;
+    width: 100vw; /*larghezza della pagina*/
+    position: fixed; /* per farlo stare a sinistra*/
+    left: 0; /*per iniziarlo da sinistra */
+    float: right;
+    z-index: 99999;
+}
+
+.ul-menu-2 li:hover div{
+    display: block; 
+}
+
+#div-2-menu-orizzontale-2{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 0 5% 0 5%
+}
+
+.ul-menu-2 li div ul {
+    display: flex;
+    float: left;
+    background-color: #ffffff;
+    height: 380px;
+    width: 180px;
+    list-style-type: none;
+    margin: 5px;
+    flex-direction: column; /*incolonna i figli li*/
+    padding: 50px 3px 0 3px;
+    height: auto;
+}
+
+#primo-ul-di-menu-orizzontale{
+    width: 200px;
+}
+
+.ul-menu-2 li div ul li{
+    height: 25px;
+    width: 100%;
+    background-color: #ffffff;
+    margin: 2px 0 2px 0;
+    font-weight: 100; /* spessore*/
+    padding: 0; 
+    font-size: 12px;
+}
+
+.ul-menu-2 li div ul li p{
+    margin: 0;
+    color: rgb(115, 115, 115)
+}
+
+.ul-menu-2 li div ul li p:hover{
+    color: black;
+}
+
+.ul-menu-2 li div ul li:first-child{ /*titoli del menu 2*/
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/*SEARCHBAR*/
+
+#div-icona-carrello{
+    float: left;
+    background-color: #ffffff;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin: 12px 0px 13px 10px; 
+}
+
+#div-icona-carrello:hover {
+    background: #e5e5e5;
+}
+
+#icona-carrello{
+    height: 24px;
+    width: 28px;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+
+#div-icona-preferiti{
+    float: left;
+    background-color: #ffffff;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin: 12px 0 13px 0; 
+}
+
+#div-icona-preferiti:hover {
+    background: #e5e5e5;
+}
+
+#icona-preferiti{
+    height: 24px;
+    width: 24px;
+    margin-top: 6px;
+    margin-left: 5px;
+}
+
+#searchbar-container{
+    float: left;
+    background-color: #ffffff;
+    height: 100%;
+    width: 160px;
+    margin-left: 50px;
+}
+
+#searchbar{
+    background-color: #f5f5f5;
+    height: 35px;
+    width: 150px;
+    border-radius: 17px 17px 17px 17px ;
+    margin: 12px 0 13px 0; 
+}
+
+#searchbar:hover {
+    background: #e5e5e5;
+}
+
+#searchbar p{
+    float: right;
+    margin: 8px 65px 0 0 ;
+    color: #707072;
+    font-weight: bold;
+}
+
+#div-icona-cerca{
+    background-color: #f5f5f5;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+#div-icona-cerca:hover{
+    background: #cacacb;
+}
+
+#icona-cerca{
+    height: 24px;
+    width: 24px;
+    margin-top: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+/*CONTAINER 3*/
+
+.container3 {
+    background-color: #f5f5f5;
+    height: 55px;
+    width: 100%;
+} 
+
+/*FINE HEADER*/
+
+section{
+    background-color: rgb(255, 255, 255);
+    height: 850px;
+    max-height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#div-centro-pagina{
+    border: 1px solid #c2c2c2;
+    border-radius: 5px;
+    height: 650px;
+    width: 1000px;
+    margin-top: 70px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#container-sinistra-form{ 
+    display: flex;
+    flex-direction: column; 
+    float: left;
+    margin: 0 5px 0 0;
+    height: 600px;
+    width: 500px;
+}
+
+#container-destra{
+    float: left;
+    width: 300px;
+    height: 600px;
+}
+
+#primo button{
+    height: 42px;
+    width: 225px;
+    border-radius: 10px;
+    border: 1px solid black ;
+}
+
+#primo button:hover{
+    background-color: #d1d1d1 ;
+    cursor: pointer;
+}
+
+#primo button span{
+    display: flex;
+    width: 60px;
+    height: 10px;
+    align-items: center;   
+}  
+
+.input, .input2{
+    border-radius: 7px;
+    border: 1px solid black;
+    height: 40px;
+    font-size: 17px;
+}
+
+#btn-invio, #btn-invio2{
+    border-radius: 25px;
+    background-color: #e5e5e5;
+    border: 0;
+    height: 40px;
+    width: 160px;
+    font-size: 17px;
+    float: right;
+    margin: 10px 20px 0 0;
+}
+
+#btn-invio:hover , #btn-invio2:hover{
+    background-color: #acacac;
+}
+
+.separatore{
+    margin: 0;
+    color: #b6b6b6;
+}
+
+#div-container-p-carrello{
+    margin: 0 0 0 20px;
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;  
+    height: 100px;
+    width: 160px;
+}
+
+#riepilogo-carrello{
+    height: 140px;
+    width: 100%;
+    display: flex;
+    justify-content: start; 
+    align-items: center;
+}
+
+#riepilogo-carrello img{
+    height: 80px;
+    width: 80px;
+    object-fit: cover; 
+    margin: 0 5px 0 5px;
+}
+
+#div-container-p-carrello{
+    margin: 0 0 0 5px; 
+    flex-direction: column;  
+    height: 140px;
+    width: 160px;
+}
+
+#riepilogo-carrello p{
+    margin: 5px 0 5px 0;
+    font-size: 15px;
+}
+
+#container-sx-dx{
+    height: 205px;
+    width: 100%;
+    flex-direction: column; 
+}
+
+#container-sx-dx div{
+    float: left;
+}
+
+#div-totale{
+    height: 30px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#tot-sx{
+    height: 100%;
+    width: 50%;
+}
+
+#tot-dx p{
+    margin: 5px 10px 0 0;
+}
+
+.separatore-piccolo{
+    margin: 0;
+    color: #b6b6b6;
+}
+
+#riepilogo-sinistra{
+    height: 140px;
+    width: 200px;
+}
+
+#riepilogo-destra{
+    height: 140px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;  
+    align-items: flex-end;
+}
+
+.testo-riepilogo{
+    font-size: 15px;
+}
+
+#titolo-riepilogo{
+    font-size: 20px;
+    margin-top: 0;
+}
+
+#carta-credito{
+    display: none; /*<----------- */
+    margin-bottom: 210px;
+}

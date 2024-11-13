@@ -1,0 +1,18 @@
+{
+    "prodotti": [
+      {
+        "nome": "Nike Dunk Low",
+        "tipo": "Scarpa uomo",
+        "misura": "",
+        "prezzo": "119€"
+        
+      },
+
+      {
+        "nome": "Nike Dunk Retro",
+        "tipo": "Scarpa donna",
+        "misura": "",
+        "prezzo": "130€"
+      }
+    ]
+}

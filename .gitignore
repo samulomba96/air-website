@@ -1,0 +1,18 @@
+# File di sistema
+.DS_Store
+Thumbs.db
+
+# File temporanei
+*.tmp
+*.log
+
+# File di editor
+.vscode/
+.idea/
+
+# File di backup
+*.bak
+*.swp
+
+# Altri file temporanei comuni
+*.lock
